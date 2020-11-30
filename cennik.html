@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Myjnia ręczna Błysk</title>
+    <meta name="author" content="Patryk Gorczyca">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/skrypt.js"></script>
+</head>
+<body>
+    <div class="glowny">
+        <header>
+            <h1>Myjnia ręczna <span>błysk</span></h1>
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="cennik.html" class="selected">Cennik</a>
+            </div>
+        </header>
+        <div class="center">
+            <section>
+                <p>Oblicz koszt usługi</p>
+                <div class="naform">
+                <form action="#">
+                    <label for="imie">Podaj imie: <input type="text" id="imie" required></label>
+                    <fieldset>
+                        <legend>Usługa</legend>
+                        <label for="check1">Mycie zewnętrzne 30zł<input type="checkbox" id="check1" disabled checked name="check" value="30"></label>
+                        <label for="check2">Suszenie 10zł<input type="checkbox" id="check2" name="check" value="10"></label>
+                        <label for="check3">Woskowanie 15zł<input type="checkbox" id="check3" name="check" value="15"></label>
+                        <label for="check4">Odkurzanie 10zł<input type="checkbox" id="check4" name="check" value="10"></label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Rodzaj pojazdu</legend>
+                        <select name="rodzaj_p" id="rodzaj_p">
+                            <option value="1" name="pojazd">Mały</option>
+                            <option value="1.10" name="pojazd">Średni (+10%)</option>
+                            <option value="1.20" name="pojazd">Van (+20%)</option>
+                            <option value="1.45" name="pojazd">Bus (+45%)</option>
+                          </select>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Karta stałego klienta</legend>
+                        <label for="brak">Brak<input type="radio" id="brak" name="karta" checked value="1"></label>
+                        <label for="srebrna">Srebrna (-5%)<input type="radio" id="srebrna" name="karta" value="0.95"></label>
+                        <label for="zlota">Złota (-15%)<input type="radio" id="zlota" name="karta" value="0.85"></label>
+                    </fieldset>
+
+                    <input type="reset" value="wyczyść">
+                    <input type="submit" value="oblicz" id="submit">
+
+                    
+
+
+                </form>
+                <img src="./img/hand_m.jpg" alt="mycie ręczne">
+            </div>
+                <p id="koszt_u"></p>
+            </section>
+            <section>
+                <h3>Rezerwacja na godzinę</h3>
+                <p>Rezerwacja na godzinę - rezerwuj termin mycia samochodu. Masz mało czasu? Nie lubisz czekać? Zarezerwuj mycie pojazdu na konkretną godzinę</p>
+            </section>
+        </div>
+        <footer>
+            <p>
+            <span>Patryk Gorczyca</span> 4D
+        </p>
+        </footer>
+
+
+    </div>
+</body>
+</html>
